@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@0;1&family=Poppins:wght@100;300;400;600&display=swap');
+* {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        border: none;
+        
+        
+        
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    
+    position: relative;
+    --load-time : 800ms;
+   
+    
+}
+
+form {
+    margin-top: 30px;
+    text-align: center;
+    padding: 20px;
+    border-radius: .5rem;
+    background:rgba(255, 255, 255, 0.355);
+    border: solid #130f40 2px;
+    box-shadow:  .5rem .5rem rgba(0,0,0,.1);
+    outline-offset: -1rem;
+    text-align: center;
+    overflow: hidden;
+    position: absolute;
+    
+
+}
+img {
+    width: 100%;
+    height: 100vh;
+    
+}
+    
+
+
+
+input {
+    display: block;
+    width: 350px;
+    height: 40px;
+    
+    margin: 20px;
+   border: none;
+   font-size: 15px;
+   border-bottom: 1px solid #130f40;
+   background:transparent;
+   
+   
+
+}
+
+
+
+button {
+    width: 350px;
+    height: 40px;
+    
+    background-color:transparent;
+    color:  #130f40;
+    margin-top: 20px;
+    font-size: 1.5rem;
+    border-radius: .5rem;
+    border: .1rem solid #130f40;
+    cursor: pointer;
+    animation: signup-button var(--load-time) ease-in-out;
+}
+button:hover {
+    background:#ffc800 ;
+    color: #fff;
+    transition: 0.2s linear;
+    border: .1rem solid #130f40;
+}
+h1 {
+    background:#ffc800;
+    border: solid black 2px;
+    font-size: 2.0em;
+    display: inline-block;
+    padding: .5rem 3rem;
+    clip-path: polygon(100% 0%, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+    color: white;
+    margin-bottom: 20px;
+    -webkit-text-stroke: #130f40 ;
+    -webkit-text-stroke-width: .08rem;
+    animation: signup-load var(--load-time) ease-in ;
+    
+    
+    
+    
+}
+
+.user{
+    animation: user-load var(--load-time) ease-in;
+}
+.mail {
+    animation: mail-load var(--load-time) ease-in;
+}
+.pass {
+    animation: pass-load var(--load-time) ease-in;
+}
+.pass2 {
+    animation: pass2-load var(--load-time) ease-in;
+}
+::placeholder {
+    color: #130f40;
+
+   
+}
+
+@keyframes signup-load {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(100%);
+    }
+}
+
+@keyframes signup-button {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes user-load {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes mail-load {
+    0% {
+        transform: translateX(+100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+@keyframes pass-load {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+@keyframes pass2-load {
+    0% {
+        transform: translateX(+100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
